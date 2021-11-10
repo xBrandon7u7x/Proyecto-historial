@@ -152,6 +152,23 @@ public class historial extends javax.swing.JFrame {
         jScrollPane14 = new javax.swing.JScrollPane();
         txttegumentos = new javax.swing.JTextArea();
         Tegumentos = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        Tegumentos1 = new javax.swing.JLabel();
+        txtpeso = new javax.swing.JTextField();
+        Tegumentos2 = new javax.swing.JLabel();
+        txttalla = new javax.swing.JTextField();
+        Tegumentos3 = new javax.swing.JLabel();
+        txtemperatura = new javax.swing.JTextField();
+        Tegumentos4 = new javax.swing.JLabel();
+        txtpresion = new javax.swing.JTextField();
+        txtfrespiratoria = new javax.swing.JTextField();
+        Tegumentos5 = new javax.swing.JLabel();
+        Tegumentos6 = new javax.swing.JLabel();
+        txtfcardiaca = new javax.swing.JTextField();
+        Tegumentos8 = new javax.swing.JLabel();
+        txtglucosa = new javax.swing.JTextField();
+        Tegumentos9 = new javax.swing.JLabel();
+        txtoximetria = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 51, 255));
@@ -425,6 +442,33 @@ public class historial extends javax.swing.JFrame {
         Tegumentos.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         Tegumentos.setText("Tegumentos");
 
+        jLabel56.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel56.setText("Exploración fisíca");
+
+        Tegumentos1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos1.setText("Peso:");
+
+        Tegumentos2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos2.setText("Talla:");
+
+        Tegumentos3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos3.setText("Temperatura:");
+
+        Tegumentos4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos4.setText("Presión:");
+
+        Tegumentos5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos5.setText("F. respiratoria:");
+
+        Tegumentos6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos6.setText("F. cardiaca:");
+
+        Tegumentos8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos8.setText("Glucosa:");
+
+        Tegumentos9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos9.setText("Oximetria:");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -646,6 +690,47 @@ public class historial extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)
                         .addGap(21, 21, 21))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(88, 88, 88)
+                        .addComponent(jLabel56))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Tegumentos1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtpeso, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Tegumentos2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txttalla, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Tegumentos3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Tegumentos4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Tegumentos5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtfrespiratoria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Tegumentos6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtfcardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Tegumentos8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtglucosa, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Tegumentos9)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -714,14 +799,15 @@ public class historial extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel20)
                     .addComponent(txt_abu, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel21))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel22))
-                .addGap(43, 43, 43)
+                .addGap(27, 27, 27)
                 .addComponent(jLabel27)
                 .addGap(8, 8, 8)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -825,7 +911,31 @@ public class historial extends javax.swing.JFrame {
                         .addComponent(Tegumentos)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(41, Short.MAX_VALUE))))
+                        .addGap(41, 41, 41)
+                        .addComponent(jLabel56)
+                        .addGap(2, 2, 2)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Tegumentos1)
+                            .addComponent(txtpeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos2)
+                            .addComponent(txttalla, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos3)
+                            .addComponent(txtemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Tegumentos4)
+                            .addComponent(txtpresion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos5)
+                            .addComponent(txtfrespiratoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos6)
+                            .addComponent(txtfcardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Tegumentos8)
+                            .addComponent(txtglucosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos9)
+                            .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(113, Short.MAX_VALUE))))
         );
 
         jScrollPane1.setViewportView(jPanel1);
@@ -867,7 +977,7 @@ public class historial extends javax.swing.JFrame {
         conectar cc = new conectar();
         Connection cn = cc.conexion();
 
-        String nom,edad,direccion,tel,enferma,enfermo,mavive,masana,pavive,pasano,herm,abu,tio,hijo,sex,estado,originario,residente,escolaridad,ocupacion,deportes,habitacion,mascotas,habitos,alcoholismo,tabaquismo,adicciones,padecimientos,infecciones,alergias,fracturas,cirugias,transfuciones,gporh,vacunas,enfermedadesactuales;
+        String nom,edad,direccion,tel,enferma,enfermo,mavive,masana,pavive,pasano,herm,abu,tio,hijo,sex,estado,originario,residente,escolaridad,ocupacion,deportes,habitacion,mascotas,habitos,alcoholismo,tabaquismo,adicciones,padecimientos,infecciones,alergias,fracturas,cirugias,transfuciones,gporh,vacunas,enfermedadesactuales,respiratorio,digestivo,urinario,endorcinos,sistema_nerviso,sistema_muscular,tegumentos,peso,talla,temperatura,presion,fre_respiratoria,fre_cardiaca,glucosa,oximetria;
         String sql=" ";
 
         nom = txt_nombre.getText();
@@ -906,7 +1016,22 @@ public class historial extends javax.swing.JFrame {
         gporh = txtgpo.getText();
         vacunas = txtvacu.getText();
         enfermedadesactuales = txtenfermedad.getText();
-        sql = "INSERT INTO historial_clinico (fecha_registro, nombre_paciente, fecha_nacimiento, edad, sexo, tel, direcc, estado_civil, madre_vive, madre_sana, madre_enfermedades, padre_vive, padre_sano, padre_enfermedades, herm, abu, tios, hijos, originario, residente, escolaridad, ocupacion, deportes	, habitacion, mascotas, habitos_dieteticos, alcoholismo, tabaquismo, adicciones, padecimientos_infancia, infecciones, alergias, fracturas, cirugias, transfuciones, gpo_rh, Vacunaciones, Enfermedades_actuales) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        respiratorio = txtrespiratorio.getText();
+        digestivo = txtdigestivo.getText();
+        urinario = txturinario.getText();
+        endorcinos = txtendorcinos.getText();
+        sistema_nerviso = txtsistemanervioso.getText();
+        sistema_muscular = txtsistemamuscular.getText();
+        tegumentos = txttegumentos.getText();
+        peso = txtpeso.getText();
+        talla = txttalla.getText();
+        temperatura = txtemperatura.getText();
+        presion = txtpresion.getText();
+        fre_respiratoria = txtfrespiratoria.getText();
+        fre_cardiaca = txtfcardiaca.getText();
+        glucosa = txtglucosa.getText();
+        oximetria = txtoximetria.getText();
+        sql = "INSERT INTO historial_clinico (fecha_registro, nombre_paciente, fecha_nacimiento, edad, sexo, tel, direcc, estado_civil, madre_vive, madre_sana, madre_enfermedades, padre_vive, padre_sano, padre_enfermedades, herm, abu, tios, hijos, originario, residente, escolaridad, ocupacion, deportes	, habitacion, mascotas, habitos_dieteticos, alcoholismo, tabaquismo, adicciones, padecimientos_infancia, infecciones, alergias, fracturas, cirugias, transfuciones, gpo_rh, Vacunaciones, Enfermedades_actuales, ipa_respiratorio, ipa_digestivo, ipa_urinario, ipa_endorcinos, ipa_sistema_nerviso, ipa_sistema_muscular, ipa_tegumentos, peso, talla, temperatura, presion, f_respiratoria, f_cardiaca, glucosa, oximetria) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement pst = cn.prepareStatement(sql);
             pst.setString(1,((JTextField)jdfecha.getDateEditor().getUiComponent()).getText());
@@ -947,6 +1072,21 @@ public class historial extends javax.swing.JFrame {
             pst.setString(36,gporh);
             pst.setString(37,vacunas);
             pst.setString(38,enfermedadesactuales);
+            pst.setString(39,respiratorio);
+            pst.setString(40,digestivo);
+            pst.setString(41,urinario);
+            pst.setString(42,endorcinos);
+            pst.setString(43,sistema_nerviso);
+            pst.setString(44,sistema_muscular);
+            pst.setString(45,tegumentos);
+            pst.setString(46,peso);
+            pst.setString(47,talla);
+            pst.setString(48,temperatura);
+            pst.setString(49,presion);
+            pst.setString(50,fre_respiratoria);
+            pst.setString(51,fre_cardiaca);
+            pst.setString(52,glucosa);
+            pst.setString(53,oximetria);
             int n = pst.executeUpdate();
             if(n>0){
                 JOptionPane.showMessageDialog(null,"Historial clínico guardado con éxito");
@@ -999,6 +1139,14 @@ public class historial extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Tegumentos;
+    private javax.swing.JLabel Tegumentos1;
+    private javax.swing.JLabel Tegumentos2;
+    private javax.swing.JLabel Tegumentos3;
+    private javax.swing.JLabel Tegumentos4;
+    private javax.swing.JLabel Tegumentos5;
+    private javax.swing.JLabel Tegumentos6;
+    private javax.swing.JLabel Tegumentos8;
+    private javax.swing.JLabel Tegumentos9;
     private javax.swing.JButton btnguardar;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
@@ -1049,6 +1197,7 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -1092,10 +1241,14 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JTextField txtcirugias;
     private javax.swing.JTextField txtdeportes;
     private javax.swing.JTextArea txtdigestivo;
+    private javax.swing.JTextField txtemperatura;
     private javax.swing.JTextArea txtendorcinos;
     private javax.swing.JTextArea txtenfermedad;
     private javax.swing.JTextField txtesco;
+    private javax.swing.JTextField txtfcardiaca;
     private javax.swing.JTextField txtfracturas;
+    private javax.swing.JTextField txtfrespiratoria;
+    private javax.swing.JTextField txtglucosa;
     private javax.swing.JTextField txtgpo;
     private javax.swing.JTextField txthabitacion;
     private javax.swing.JTextArea txthabitos;
@@ -1104,11 +1257,15 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JTextField txtmascota;
     private javax.swing.JTextField txtocu;
     private javax.swing.JTextField txtorig;
+    private javax.swing.JTextField txtoximetria;
+    private javax.swing.JTextField txtpeso;
+    private javax.swing.JTextField txtpresion;
     private javax.swing.JTextField txtres;
     private javax.swing.JTextArea txtrespiratorio;
     private javax.swing.JTextArea txtsistemamuscular;
     private javax.swing.JTextArea txtsistemanervioso;
     private javax.swing.JTextField txttabaco;
+    private javax.swing.JTextField txttalla;
     private javax.swing.JTextArea txttegumentos;
     private javax.swing.JTextField txttransfucion;
     private javax.swing.JTextArea txturinario;
