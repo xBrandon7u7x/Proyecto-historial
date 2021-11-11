@@ -62,10 +62,20 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jButton2.setText("Historial clínico pediátrico");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/preview_search_find_locate_1551 (1).png"))); // NOI18N
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Buscar un historial");
 
@@ -136,6 +146,18 @@ public class Principal extends javax.swing.JFrame {
     abrir.setVisible(true);
     this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    menubuscar abrir= new menubuscar();
+    abrir.setVisible(true);
+    this.setVisible(false);
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    historialpediatrico abrir = new historialpediatrico();
+    abrir.setVisible(true);
+    this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

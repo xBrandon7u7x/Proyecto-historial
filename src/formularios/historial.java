@@ -169,12 +169,26 @@ public class historial extends javax.swing.JFrame {
         txtglucosa = new javax.swing.JTextField();
         Tegumentos9 = new javax.swing.JLabel();
         txtoximetria = new javax.swing.JTextField();
+        jScrollPane15 = new javax.swing.JScrollPane();
+        txtgeneral = new javax.swing.JTextArea();
+        Tegumentos7 = new javax.swing.JLabel();
+        Tegumentos10 = new javax.swing.JLabel();
+        jdfechaexamenes = new com.toedter.calendar.JDateChooser();
+        Tegumentos11 = new javax.swing.JLabel();
+        jScrollPane16 = new javax.swing.JScrollPane();
+        txtdiagnostico = new javax.swing.JTextArea();
+        jScrollPane17 = new javax.swing.JScrollPane();
+        txttratamiento = new javax.swing.JTextArea();
+        Tegumentos12 = new javax.swing.JLabel();
+        Tegumentos13 = new javax.swing.JLabel();
+        jScrollPane18 = new javax.swing.JScrollPane();
+        txtpronostico = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 51, 255));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jLabel1.setText("Hstorial Clínico");
+        jLabel1.setText("Hstoria Clínica");
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel4.setText("Datos generales del paciente");
@@ -469,6 +483,39 @@ public class historial extends javax.swing.JFrame {
         Tegumentos9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         Tegumentos9.setText("Oximetria:");
 
+        txtgeneral.setColumns(20);
+        txtgeneral.setRows(5);
+        jScrollPane15.setViewportView(txtgeneral);
+
+        Tegumentos7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos7.setText("Inspección general");
+
+        Tegumentos10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos10.setText("Examenes previos: ");
+
+        jdfechaexamenes.setDateFormatString("yyyy/MM/d");
+
+        Tegumentos11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos11.setText("Diagnóstico");
+
+        txtdiagnostico.setColumns(20);
+        txtdiagnostico.setRows(5);
+        jScrollPane16.setViewportView(txtdiagnostico);
+
+        txttratamiento.setColumns(20);
+        txttratamiento.setRows(5);
+        jScrollPane17.setViewportView(txttratamiento);
+
+        Tegumentos12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos12.setText("Tratamiento");
+
+        Tegumentos13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos13.setText("Pronóstico");
+
+        txtpronostico.setColumns(20);
+        txtpronostico.setRows(5);
+        jScrollPane18.setViewportView(txtpronostico);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -684,7 +731,11 @@ public class historial extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Tegumentos)
-                            .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos11)
+                            .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos13)
+                            .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnguardar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -729,7 +780,22 @@ public class historial extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(Tegumentos9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Tegumentos7)
+                            .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Tegumentos10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jdfechaexamenes, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Tegumentos12)
+                            .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -935,7 +1001,27 @@ public class historial extends javax.swing.JFrame {
                             .addComponent(txtglucosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Tegumentos9)
                             .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(113, Short.MAX_VALUE))))
+                        .addGap(18, 18, 18)
+                        .addComponent(Tegumentos7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Tegumentos10)
+                            .addComponent(jdfechaexamenes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Tegumentos11)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Tegumentos12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Tegumentos13)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(47, Short.MAX_VALUE))))
         );
 
         jScrollPane1.setViewportView(jPanel1);
@@ -977,7 +1063,7 @@ public class historial extends javax.swing.JFrame {
         conectar cc = new conectar();
         Connection cn = cc.conexion();
 
-        String nom,edad,direccion,tel,enferma,enfermo,mavive,masana,pavive,pasano,herm,abu,tio,hijo,sex,estado,originario,residente,escolaridad,ocupacion,deportes,habitacion,mascotas,habitos,alcoholismo,tabaquismo,adicciones,padecimientos,infecciones,alergias,fracturas,cirugias,transfuciones,gporh,vacunas,enfermedadesactuales,respiratorio,digestivo,urinario,endorcinos,sistema_nerviso,sistema_muscular,tegumentos,peso,talla,temperatura,presion,fre_respiratoria,fre_cardiaca,glucosa,oximetria;
+        String nom,edad,direccion,tel,enferma,enfermo,mavive,masana,pavive,pasano,herm,abu,tio,hijo,sex,estado,originario,residente,escolaridad,ocupacion,deportes,habitacion,mascotas,habitos,alcoholismo,tabaquismo,adicciones,padecimientos,infecciones,alergias,fracturas,cirugias,transfuciones,gporh,vacunas,enfermedadesactuales,respiratorio,digestivo,urinario,endorcinos,sistema_nerviso,sistema_muscular,tegumentos,peso,talla,temperatura,presion,fre_respiratoria,fre_cardiaca,glucosa,oximetria,inspeccion,diagnostico,tratamiento,pronostico;
         String sql=" ";
 
         nom = txt_nombre.getText();
@@ -1031,7 +1117,11 @@ public class historial extends javax.swing.JFrame {
         fre_cardiaca = txtfcardiaca.getText();
         glucosa = txtglucosa.getText();
         oximetria = txtoximetria.getText();
-        sql = "INSERT INTO historial_clinico (fecha_registro, nombre_paciente, fecha_nacimiento, edad, sexo, tel, direcc, estado_civil, madre_vive, madre_sana, madre_enfermedades, padre_vive, padre_sano, padre_enfermedades, herm, abu, tios, hijos, originario, residente, escolaridad, ocupacion, deportes	, habitacion, mascotas, habitos_dieteticos, alcoholismo, tabaquismo, adicciones, padecimientos_infancia, infecciones, alergias, fracturas, cirugias, transfuciones, gpo_rh, Vacunaciones, Enfermedades_actuales, ipa_respiratorio, ipa_digestivo, ipa_urinario, ipa_endorcinos, ipa_sistema_nerviso, ipa_sistema_muscular, ipa_tegumentos, peso, talla, temperatura, presion, f_respiratoria, f_cardiaca, glucosa, oximetria) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        inspeccion = txtgeneral.getText();
+        diagnostico = txtdiagnostico.getText();
+        tratamiento = txttratamiento.getText();
+        pronostico = txtpronostico.getText();
+        sql = "INSERT INTO historial_clinico (fecha_registro, nombre_paciente, fecha_nacimiento, edad, sexo, tel, direcc, estado_civil, madre_vive, madre_sana, madre_enfermedades, padre_vive, padre_sano, padre_enfermedades, herm, abu, tios, hijos, originario, residente, escolaridad, ocupacion, deportes	, habitacion, mascotas, habitos_dieteticos, alcoholismo, tabaquismo, adicciones, padecimientos_infancia, infecciones, alergias, fracturas, cirugias, transfuciones, gpo_rh, Vacunaciones, Enfermedades_actuales, ipa_respiratorio, ipa_digestivo, ipa_urinario, ipa_endorcinos, ipa_sistema_nerviso, ipa_sistema_muscular, ipa_tegumentos, peso, talla, temperatura, presion, f_respiratoria, f_cardiaca, glucosa, oximetria, inspeccion_general, fecha_examenes, diagnostico, tratamiento, pronostico) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement pst = cn.prepareStatement(sql);
             pst.setString(1,((JTextField)jdfecha.getDateEditor().getUiComponent()).getText());
@@ -1087,6 +1177,11 @@ public class historial extends javax.swing.JFrame {
             pst.setString(51,fre_cardiaca);
             pst.setString(52,glucosa);
             pst.setString(53,oximetria);
+            pst.setString(54,inspeccion);
+            pst.setString(55,((JTextField)jdfechaexamenes.getDateEditor().getUiComponent()).getText());
+            pst.setString(56,diagnostico);
+            pst.setString(57,tratamiento);
+            pst.setString(58,pronostico);
             int n = pst.executeUpdate();
             if(n>0){
                 JOptionPane.showMessageDialog(null,"Historial clínico guardado con éxito");
@@ -1140,11 +1235,16 @@ public class historial extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Tegumentos;
     private javax.swing.JLabel Tegumentos1;
+    private javax.swing.JLabel Tegumentos10;
+    private javax.swing.JLabel Tegumentos11;
+    private javax.swing.JLabel Tegumentos12;
+    private javax.swing.JLabel Tegumentos13;
     private javax.swing.JLabel Tegumentos2;
     private javax.swing.JLabel Tegumentos3;
     private javax.swing.JLabel Tegumentos4;
     private javax.swing.JLabel Tegumentos5;
     private javax.swing.JLabel Tegumentos6;
+    private javax.swing.JLabel Tegumentos7;
     private javax.swing.JLabel Tegumentos8;
     private javax.swing.JLabel Tegumentos9;
     private javax.swing.JButton btnguardar;
@@ -1209,6 +1309,10 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane14;
+    private javax.swing.JScrollPane jScrollPane15;
+    private javax.swing.JScrollPane jScrollPane16;
+    private javax.swing.JScrollPane jScrollPane17;
+    private javax.swing.JScrollPane jScrollPane18;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
@@ -1218,6 +1322,7 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JScrollPane jScrollPane9;
     private com.toedter.calendar.JDateChooser jdfecha;
+    private com.toedter.calendar.JDateChooser jdfechaexamenes;
     private com.toedter.calendar.JDateChooser jdfechanacim;
     private javax.swing.JTextField txt_abu;
     private javax.swing.JTextField txt_direc;
@@ -1240,6 +1345,7 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JTextField txtalergias;
     private javax.swing.JTextField txtcirugias;
     private javax.swing.JTextField txtdeportes;
+    private javax.swing.JTextArea txtdiagnostico;
     private javax.swing.JTextArea txtdigestivo;
     private javax.swing.JTextField txtemperatura;
     private javax.swing.JTextArea txtendorcinos;
@@ -1248,6 +1354,7 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JTextField txtfcardiaca;
     private javax.swing.JTextField txtfracturas;
     private javax.swing.JTextField txtfrespiratoria;
+    private javax.swing.JTextArea txtgeneral;
     private javax.swing.JTextField txtglucosa;
     private javax.swing.JTextField txtgpo;
     private javax.swing.JTextField txthabitacion;
@@ -1260,6 +1367,7 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JTextField txtoximetria;
     private javax.swing.JTextField txtpeso;
     private javax.swing.JTextField txtpresion;
+    private javax.swing.JTextArea txtpronostico;
     private javax.swing.JTextField txtres;
     private javax.swing.JTextArea txtrespiratorio;
     private javax.swing.JTextArea txtsistemamuscular;
@@ -1268,6 +1376,7 @@ public class historial extends javax.swing.JFrame {
     private javax.swing.JTextField txttalla;
     private javax.swing.JTextArea txttegumentos;
     private javax.swing.JTextField txttransfucion;
+    private javax.swing.JTextArea txttratamiento;
     private javax.swing.JTextArea txturinario;
     private javax.swing.JTextField txtvacu;
     // End of variables declaration//GEN-END:variables
