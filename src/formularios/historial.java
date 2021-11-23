@@ -320,7 +320,7 @@ public class historial extends javax.swing.JFrame {
         jLabel27.setText("Antecedentes personales no patologicos");
 
         jLabel28.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel28.setText("Originrio:");
+        jLabel28.setText("Originario:");
 
         jLabel29.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel29.setText("Escolaridad:");
@@ -623,7 +623,10 @@ public class historial extends javax.swing.JFrame {
                                     .addGap(56, 56, 56)
                                     .addComponent(jLabel39))
                                 .addComponent(jLabel40)
-                                .addComponent(txtinfancia)
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(jLabel37)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(txtinfancia))
                                 .addComponent(jLabel41)
                                 .addComponent(txtinfeccion, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -658,8 +661,7 @@ public class historial extends javax.swing.JFrame {
                                         .addComponent(txtvacu, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addComponent(jLabel48)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel37)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(67, 67, 67)
                                 .addComponent(txtadiccion, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel4)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -906,15 +908,15 @@ public class historial extends javax.swing.JFrame {
                     .addComponent(jLabel38)
                     .addComponent(txttabaco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel37)
-                    .addComponent(txtadiccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(txtadiccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44)
                 .addComponent(jLabel39)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel40)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtinfancia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtinfancia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel37))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel41)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
