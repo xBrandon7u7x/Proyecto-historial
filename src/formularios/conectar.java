@@ -9,7 +9,7 @@ import java.sql.*;
 import javax.swing.*;
 /**
  *
- * @author Charlie
+ * @author xBrandon7u7x
  */
 public class conectar {
     Connection conect = null;
