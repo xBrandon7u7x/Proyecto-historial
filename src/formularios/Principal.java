@@ -28,56 +28,64 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        btnhistoria = new javax.swing.JButton();
+        btnsalir = new javax.swing.JButton();
+        btncerrarsesion = new javax.swing.JButton();
+        btnhistoriapediatrica = new javax.swing.JButton();
+        btnbuscar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        btnhistoriagine = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 24)); // NOI18N
         jLabel1.setText("Consultorio Dra. Ana María Ortiz Hernández ");
 
-        jButton1.setText("Historial clínico");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnhistoria.setText("Historia clínica");
+        btnhistoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnhistoriaActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Salir");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btnsalir.setText("Salir");
+        btnsalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btnsalirActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Cerrar Sesión");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btncerrarsesion.setText("Cerrar Sesión");
+        btncerrarsesion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btncerrarsesionActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Historial clínico pediátrico");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnhistoriapediatrica.setText("Historia clínica pediátrica");
+        btnhistoriapediatrica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnhistoriapediatricaActionPerformed(evt);
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/preview_search_find_locate_1551 (1).png"))); // NOI18N
-        jButton6.setBorderPainted(false);
-        jButton6.setContentAreaFilled(false);
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnbuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/preview_search_find_locate_1551 (1).png"))); // NOI18N
+        btnbuscar.setBorderPainted(false);
+        btnbuscar.setContentAreaFilled(false);
+        btnbuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnbuscarActionPerformed(evt);
             }
         });
 
         jLabel2.setText("Buscar un historial");
+
+        btnhistoriagine.setText("Historia clínica ginecológica");
+        btnhistoriagine.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnhistoriagineActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,9 +93,9 @@ public class Principal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addComponent(btncerrarsesion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
+                .addComponent(btnsalir)
                 .addGap(22, 22, 22))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -95,17 +103,21 @@ public class Principal extends javax.swing.JFrame {
                         .addGap(75, 75, 75)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 542, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(254, 254, 254)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(232, 232, 232)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(274, 274, 274)
-                        .addComponent(jButton6))
+                        .addComponent(btnbuscar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(266, 266, 266)
-                        .addComponent(jLabel2)))
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(258, 258, 258)
+                        .addComponent(btnhistoria))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(232, 232, 232)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnhistoriagine)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(btnhistoriapediatrica)))))
                 .addContainerGap(85, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -113,51 +125,59 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(145, 145, 145)
-                .addComponent(jButton1)
+                .addGap(107, 107, 107)
+                .addComponent(btnhistoria)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jButton6)
+                .addComponent(btnhistoriagine)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnhistoriapediatrica)
+                .addGap(22, 22, 22)
+                .addComponent(btnbuscar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(btnsalir)
+                    .addComponent(btncerrarsesion))
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
         System.exit(WIDTH);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btnsalirActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnhistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhistoriaActionPerformed
     historial abrir= new historial();
     abrir.setVisible(true);
     this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnhistoriaActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btncerrarsesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncerrarsesionActionPerformed
     iniciosesion abrir= new iniciosesion();
     abrir.setVisible(true);
     this.setVisible(false);
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btncerrarsesionActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
     menubuscar abrir= new menubuscar();
     abrir.setVisible(true);
     this.setVisible(false);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnbuscarActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnhistoriapediatricaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhistoriapediatricaActionPerformed
     historialpediatrico abrir = new historialpediatrico();
     abrir.setVisible(true);
     this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnhistoriapediatricaActionPerformed
+
+    private void btnhistoriagineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhistoriagineActionPerformed
+    historia_ginecologica abrir = new historia_ginecologica();
+    abrir.setVisible(true);
+    this.setVisible(false);
+    }//GEN-LAST:event_btnhistoriagineActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,11 +215,12 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton btnbuscar;
+    private javax.swing.JButton btncerrarsesion;
+    private javax.swing.JButton btnhistoria;
+    private javax.swing.JButton btnhistoriagine;
+    private javax.swing.JButton btnhistoriapediatrica;
+    private javax.swing.JButton btnsalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables

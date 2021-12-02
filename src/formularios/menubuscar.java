@@ -27,23 +27,24 @@ public class menubuscar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnbuscarhistoriaclinica = new javax.swing.JButton();
+        btnbuscarhistoriapediatrica = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        btnbuscarhistoriaclinicaginecologica = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Buscar Historia Clínica");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnbuscarhistoriaclinica.setText("Buscar Historia Clínica");
+        btnbuscarhistoriaclinica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnbuscarhistoriaclinicaActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Buscar Historia Clínica Pediatríca");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnbuscarhistoriapediatrica.setText("Buscar Historia Clínica Pediatríca");
+        btnbuscarhistoriapediatrica.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnbuscarhistoriapediatricaActionPerformed(evt);
             }
         });
 
@@ -54,6 +55,13 @@ public class menubuscar extends javax.swing.JFrame {
             }
         });
 
+        btnbuscarhistoriaclinicaginecologica.setText("Buscar Historia Clínica Ginecologica");
+        btnbuscarhistoriaclinicaginecologica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbuscarhistoriaclinicaginecologicaActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -61,9 +69,10 @@ public class menubuscar extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(107, 107, 107)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2))
-                .addContainerGap(115, Short.MAX_VALUE))
+                    .addComponent(btnbuscarhistoriaclinica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnbuscarhistoriaclinicaginecologica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnbuscarhistoriapediatrica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(103, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton3)
@@ -73,10 +82,12 @@ public class menubuscar extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(34, 34, 34)
-                .addComponent(jButton1)
+                .addComponent(btnbuscarhistoriaclinica)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
+                .addComponent(btnbuscarhistoriapediatrica)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnbuscarhistoriaclinicaginecologica)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 130, Short.MAX_VALUE)
                 .addComponent(jButton3)
                 .addGap(45, 45, 45))
         );
@@ -90,17 +101,19 @@ public class menubuscar extends javax.swing.JFrame {
     this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    buscarhistorialclinico abrir = new buscarhistorialclinico();
+    private void btnbuscarhistoriaclinicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarhistoriaclinicaActionPerformed
+    buscarhistoria_clinica abrir = new buscarhistoria_clinica();
     abrir.setVisible(true);
     this.setVisible(false);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnbuscarhistoriaclinicaActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-    buscarhistorialclinico abrir = new buscarhistorialclinico();
-    abrir.setVisible(true);
-    this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btnbuscarhistoriapediatricaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarhistoriapediatricaActionPerformed
+    
+    }//GEN-LAST:event_btnbuscarhistoriapediatricaActionPerformed
+
+    private void btnbuscarhistoriaclinicaginecologicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarhistoriaclinicaginecologicaActionPerformed
+    
+    }//GEN-LAST:event_btnbuscarhistoriaclinicaginecologicaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -138,8 +151,9 @@ public class menubuscar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnbuscarhistoriaclinica;
+    private javax.swing.JButton btnbuscarhistoriaclinicaginecologica;
+    private javax.swing.JButton btnbuscarhistoriapediatrica;
     private javax.swing.JButton jButton3;
     // End of variables declaration//GEN-END:variables
 }
