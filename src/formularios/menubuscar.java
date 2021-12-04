@@ -102,7 +102,7 @@ public class menubuscar extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void btnbuscarhistoriaclinicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarhistoriaclinicaActionPerformed
-    buscarhistoria_clinica abrir = new buscarhistoria_clinica();
+    buscarhistoriaclinica abrir = new buscarhistoriaclinica();
     abrir.setVisible(true);
     this.setVisible(false);
     }//GEN-LAST:event_btnbuscarhistoriaclinicaActionPerformed
@@ -112,7 +112,9 @@ public class menubuscar extends javax.swing.JFrame {
     }//GEN-LAST:event_btnbuscarhistoriapediatricaActionPerformed
 
     private void btnbuscarhistoriaclinicaginecologicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarhistoriaclinicaginecologicaActionPerformed
-    
+    buscarhistoriaginecologica abrir = new buscarhistoriaginecologica();
+    abrir.setVisible(true);
+    this.setVisible(false);    
     }//GEN-LAST:event_btnbuscarhistoriaclinicaginecologicaActionPerformed
 
     /**

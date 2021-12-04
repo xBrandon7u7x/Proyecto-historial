@@ -19,12 +19,12 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author xBrandon7u7x
  */
-public class buscarhistoria_clinica extends javax.swing.JFrame {
+public class buscarhistoriaclinica extends javax.swing.JFrame {
 DefaultTableModel model;
     /**
      * Creates new form buscarhistorialclinico
      */
-    public buscarhistoria_clinica() {
+    public buscarhistoriaclinica() {
         initComponents();
         buscar("");
     }
@@ -132,27 +132,12 @@ DefaultTableModel model;
         btnregresar = new javax.swing.JButton();
         btnbuscar = new javax.swing.JButton();
         btnmostrar = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtinspeccion = new javax.swing.JTextArea();
-        jLabel11 = new javax.swing.JLabel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        txtexamenesprev = new javax.swing.JTextArea();
-        jLabel12 = new javax.swing.JLabel();
-        jScrollPane5 = new javax.swing.JScrollPane();
-        txttratamiento = new javax.swing.JTextArea();
-        jLabel13 = new javax.swing.JLabel();
-        jScrollPane6 = new javax.swing.JScrollPane();
-        txtpronostico = new javax.swing.JTextArea();
         jLabel14 = new javax.swing.JLabel();
         jScrollPane7 = new javax.swing.JScrollPane();
         txtconsultasub = new javax.swing.JTextArea();
-        jLabel15 = new javax.swing.JLabel();
-        jScrollPane8 = new javax.swing.JScrollPane();
-        txtdiagnostico = new javax.swing.JTextArea();
         btnactualizar = new javax.swing.JButton();
 
-        jMenuItem1.setText("Modificar");
+        jMenuItem1.setText("Actualizar Historia Clinica");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -207,47 +192,12 @@ DefaultTableModel model;
             }
         });
 
-        jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel10.setText("Inspeccion general");
-
-        txtinspeccion.setColumns(20);
-        txtinspeccion.setRows(5);
-        jScrollPane1.setViewportView(txtinspeccion);
-
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel11.setText("Fecha de exámenes previos:");
-
-        txtexamenesprev.setColumns(20);
-        txtexamenesprev.setRows(5);
-        jScrollPane4.setViewportView(txtexamenesprev);
-
-        jLabel12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel12.setText("Tratamiento:");
-
-        txttratamiento.setColumns(20);
-        txttratamiento.setRows(5);
-        jScrollPane5.setViewportView(txttratamiento);
-
-        jLabel13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel13.setText("Pronostico:");
-
-        txtpronostico.setColumns(20);
-        txtpronostico.setRows(5);
-        jScrollPane6.setViewportView(txtpronostico);
-
         jLabel14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel14.setText("Consulta subsiguiente:");
 
         txtconsultasub.setColumns(20);
         txtconsultasub.setRows(5);
         jScrollPane7.setViewportView(txtconsultasub);
-
-        jLabel15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel15.setText("Diagnostico:");
-
-        txtdiagnostico.setColumns(20);
-        txtdiagnostico.setRows(5);
-        jScrollPane8.setViewportView(txtdiagnostico);
 
         btnactualizar.setText("Actualizar Historia");
         btnactualizar.addActionListener(new java.awt.event.ActionListener() {
@@ -261,35 +211,25 @@ DefaultTableModel model;
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 4523, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtbuscarnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnbuscar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnmostrar)
-                        .addGap(66, 66, 66)
-                        .addComponent(btnregresar))
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel15)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel13)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jScrollPane8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
-                                .addComponent(jScrollPane7, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane6, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane4, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)))
-                        .addGap(142, 142, 142)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 4523, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtbuscarnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnbuscar)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btnmostrar)
+                                .addGap(66, 66, 66)
+                                .addComponent(btnregresar))
+                            .addComponent(jLabel14)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 837, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(331, 331, 331)
                         .addComponent(btnactualizar)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -305,36 +245,13 @@ DefaultTableModel model;
                     .addComponent(btnmostrar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel12)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addComponent(btnactualizar)))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel13)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(37, 37, 37)
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(btnactualizar)
+                .addContainerGap(510, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -349,7 +266,7 @@ DefaultTableModel model;
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 587, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 702, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -374,14 +291,9 @@ DefaultTableModel model;
     }//GEN-LAST:event_btnmostrarActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-    int fila=tpacientes.getSelectedRow();
-    if(fila>=0){
-        txtinspeccion.setText(tpacientes.getValueAt(fila, 53).toString());
-        txtexamenesprev.setText(tpacientes.getValueAt(fila, 54).toString());
-        txtdiagnostico.setText(tpacientes.getValueAt(fila, 58).toString());
-        txttratamiento.setText(tpacientes.getValueAt(fila, 55).toString());
-        txtpronostico.setText(tpacientes.getValueAt(fila, 56).toString());
-        txtconsultasub.setText(tpacientes.getValueAt(fila, 57).toString());
+    int registros=tpacientes.getSelectedRow();
+    if(registros>=0){
+        txtconsultasub.setText(tpacientes.getValueAt(registros, 58).toString());
     }else{
         JOptionPane.showMessageDialog(null,"No selecciono un paciente");
     }
@@ -391,12 +303,12 @@ DefaultTableModel model;
     conectar cc = new conectar();
     Connection cn = cc.conexion();
     try {
-        PreparedStatement pst = cn.prepareStatement("Update historial_clinico SET inspeccion_general='"+txtinspeccion.getText()+"',fecha_examenes='"+txtexamenesprev.getText()+"',diagnostico='"+txtdiagnostico.getText()+"',tratamiento='"+txttratamiento.getText()+"',pronostico='"+txtpronostico.getText()+"',consulta_subsiguiente='"+txtconsultasub.getText()+"' WHERE nombre_paciente='"+txtbuscarnombre.getText()+"'");
+        PreparedStatement pst = cn.prepareStatement("Update historial_clinico SET consulta_subsiguiente='"+txtconsultasub.getText()+"' WHERE nombre_paciente='"+txtbuscarnombre.getText()+"'");
         pst.executeUpdate();
         JOptionPane.showMessageDialog(null,"Historia actualizada");
         buscar("");
     } catch (SQLException ex) {
-        Logger.getLogger(buscarhistoria_clinica.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(buscarhistoriaclinica.class.getName()).log(Level.SEVERE, null, ex);
         JOptionPane.showMessageDialog(null,"Error al actualizar");
     }
     }//GEN-LAST:event_btnactualizarActionPerformed
@@ -418,14 +330,26 @@ DefaultTableModel model;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(buscarhistoria_clinica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buscarhistoriaclinica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(buscarhistoria_clinica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buscarhistoriaclinica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(buscarhistoria_clinica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buscarhistoriaclinica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(buscarhistoria_clinica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buscarhistoriaclinica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -434,7 +358,7 @@ DefaultTableModel model;
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new buscarhistoria_clinica().setVisible(true);
+                new buscarhistoriaclinica().setVisible(true);
             }
         });
     }
@@ -444,31 +368,16 @@ DefaultTableModel model;
     private javax.swing.JButton btnbuscar;
     private javax.swing.JButton btnmostrar;
     private javax.swing.JButton btnregresar;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
-    private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTable tpacientes;
     private javax.swing.JTextField txtbuscarnombre;
     private javax.swing.JTextArea txtconsultasub;
-    private javax.swing.JTextArea txtdiagnostico;
-    private javax.swing.JTextArea txtexamenesprev;
-    private javax.swing.JTextArea txtinspeccion;
-    private javax.swing.JTextArea txtpronostico;
-    private javax.swing.JTextArea txttratamiento;
     // End of variables declaration//GEN-END:variables
 }
