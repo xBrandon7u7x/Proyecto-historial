@@ -131,7 +131,7 @@ registros[79]=rs.getString("consulta_subsiguiente");
         }
         tpacientes.setModel(model);
     } catch (SQLException ex) {
-        JOptionPane.showMessageDialog(null,ex);
+        JOptionPane.showMessageDialog(null,"No se eoncotro");
     }
         
     }
@@ -160,7 +160,7 @@ registros[79]=rs.getString("consulta_subsiguiente");
         txtconsultasub = new javax.swing.JTextArea();
         btnactualizar = new javax.swing.JButton();
 
-        jMenuItem1.setText("Modificar");
+        jMenuItem1.setText("Actualizar historia");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);

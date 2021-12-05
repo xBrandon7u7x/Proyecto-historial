@@ -234,7 +234,7 @@ public class historia_ginecologica extends javax.swing.JFrame {
         setBackground(new java.awt.Color(102, 51, 255));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jLabel1.setText("Hstoria Clínica");
+        jLabel1.setText("Hstoria Clínica Ginecologica");
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel4.setText("Datos generales del paciente");
