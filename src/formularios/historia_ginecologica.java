@@ -167,9 +167,6 @@ public class historia_ginecologica extends javax.swing.JFrame {
         txtglucosa = new javax.swing.JTextField();
         Tegumentos9 = new javax.swing.JLabel();
         txtoximetria = new javax.swing.JTextField();
-        jScrollPane15 = new javax.swing.JScrollPane();
-        txtgeneral = new javax.swing.JTextArea();
-        Tegumentos7 = new javax.swing.JLabel();
         Tegumentos11 = new javax.swing.JLabel();
         jScrollPane16 = new javax.swing.JScrollPane();
         txtpronostico = new javax.swing.JTextArea();
@@ -229,6 +226,7 @@ public class historia_ginecologica extends javax.swing.JFrame {
         txtleucorrea = new javax.swing.JTextField();
         jLabel78 = new javax.swing.JLabel();
         txtmenopausia = new javax.swing.JTextField();
+        jLabel79 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 51, 255));
@@ -526,13 +524,6 @@ public class historia_ginecologica extends javax.swing.JFrame {
         Tegumentos9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         Tegumentos9.setText("Oximetria:");
 
-        txtgeneral.setColumns(20);
-        txtgeneral.setRows(5);
-        jScrollPane15.setViewportView(txtgeneral);
-
-        Tegumentos7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos7.setText("Inspección general");
-
         Tegumentos11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         Tegumentos11.setText("Diagnóstico");
 
@@ -643,6 +634,9 @@ public class historia_ginecologica extends javax.swing.JFrame {
 
         jLabel78.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel78.setText("Leucorrea:");
+
+        jLabel79.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel79.setText("Inspección general");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -912,79 +906,85 @@ public class historia_ginecologica extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(txtalergias, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel4)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel52)
-                                    .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel54)
-                                    .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Tegumentos)
-                                    .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel50)
-                                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel51)
-                                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel53)
-                                    .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel55)
-                                    .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel52)
+                            .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel54)
+                            .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos)
+                            .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel50)
+                            .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel51)
+                            .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel53)
+                            .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel55)
+                            .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Tegumentos4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tegumentos5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtfrespiratoria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tegumentos6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtfcardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(Tegumentos8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtglucosa, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tegumentos9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel56)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(Tegumentos4)
+                                        .addComponent(Tegumentos1)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtpeso, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(Tegumentos5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtfrespiratoria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(Tegumentos6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtfcardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(Tegumentos8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtglucosa, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(Tegumentos9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(Tegumentos7)
-                                    .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Tegumentos14)
-                                    .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Tegumentos13)
-                                    .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Tegumentos12)
-                                    .addComponent(Tegumentos11)
-                                    .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Tegumentos15)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel56)
-                                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(Tegumentos1)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(txtpeso, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(Tegumentos2)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txttalla, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(Tegumentos3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txtemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGap(55, 55, 55)
-                                        .addComponent(jLabel49)))
-                                .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(Tegumentos2)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txttalla, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tegumentos3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(55, 55, 55)
+                                .addComponent(jLabel49)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(85, 85, 85)
+                        .addComponent(jLabel79))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Tegumentos14)
+                                .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Tegumentos13)
+                                .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Tegumentos12)
+                                .addComponent(Tegumentos11)
+                                .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Tegumentos15))
+                            .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(btnguardar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
-                .addGap(295, 295, 295))
+                .addGap(318, 318, 318))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1247,10 +1247,8 @@ public class historia_ginecologica extends javax.swing.JFrame {
                     .addComponent(txtglucosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Tegumentos9)
                     .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(Tegumentos7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addComponent(jLabel79)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Tegumentos14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1275,7 +1273,7 @@ public class historia_ginecologica extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(btnguardar))
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(jPanel1);
@@ -1299,7 +1297,7 @@ public class historia_ginecologica extends javax.swing.JFrame {
         conectar cc = new conectar();
         Connection cn = cc.conexion();
 
-        String nom,edad,direccion,tel,enferma,enfermo,mavive,masana,pavive,pasano,herm,abu,tio,hijo,estado,originario,residente,escolaridad,ocupacion,deportes,habitacion,mascotas,habitos,alcoholismo,tabaquismo,adicciones,padecimientos,infecciones,alergias,fracturas,cirugias,transfuciones,gporh,vacunas,enfermedadesactuales,respiratorio,digestivo,urinario,endorcinos,sistema_nerviso,sistema_muscular,tegumentos,peso,talla,temperatura,presion,fre_respiratoria,fre_cardiaca,glucosa,oximetria,inspeccion,diagnostico,tratamiento,pronostico,examenesprev,consulta,menorcant,ritmo,coagulos,dismenorrea,iniciosex,dispaurencia,orgasmo,libido,planfam,tratahorm,gesta,paras,aborto,legrado,cesarea,lactancia,papanicolao,mastografia,ultimare,leucorrea,menopausia;
+        String nom,edad,direccion,tel,enferma,enfermo,mavive,masana,pavive,pasano,herm,abu,tio,hijo,estado,originario,residente,escolaridad,ocupacion,deportes,habitacion,mascotas,habitos,alcoholismo,tabaquismo,adicciones,padecimientos,infecciones,alergias,fracturas,cirugias,transfuciones,gporh,vacunas,enfermedadesactuales,respiratorio,digestivo,urinario,endorcinos,sistema_nerviso,sistema_muscular,tegumentos,peso,talla,temperatura,presion,fre_respiratoria,fre_cardiaca,glucosa,oximetria,diagnostico,tratamiento,pronostico,examenesprev,consulta,menorcant,ritmo,coagulos,dismenorrea,iniciosex,dispaurencia,orgasmo,libido,planfam,tratahorm,gesta,paras,aborto,legrado,cesarea,lactancia,papanicolao,mastografia,ultimare,leucorrea,menopausia;
         String sql=" ";
 
         nom = txt_nombre.getText();
@@ -1352,7 +1350,6 @@ public class historia_ginecologica extends javax.swing.JFrame {
         fre_cardiaca = txtfcardiaca.getText();
         glucosa = txtglucosa.getText();
         oximetria = txtoximetria.getText();
-        inspeccion = txtgeneral.getText();
         diagnostico = txtdiagnostico.getText();
         tratamiento = txttratamiento.getText();
         pronostico = txtpronostico.getText();
@@ -1379,7 +1376,7 @@ public class historia_ginecologica extends javax.swing.JFrame {
         ultimare = txtultimaregla.getText();
         leucorrea = txtleucorrea.getText();
         menopausia = txtmenopausia.getText();
-        sql = "INSERT INTO historia_gine (fecha_registro, nombre_paciente, fecha_nacimiento, edad, tel, direcc, estado_civil, alergias, madre_vive, madre_sana, madre_enfermedades, padre_vive, padre_sano, padre_enfermedades, herm, abu, tios, hijos, originario, residente, escolaridad, ocupacion, deportes	, habitacion, mascotas, habitos_dieteticos, alcoholismo, tabaquismo, adicciones, padecimientos_infancia, infecciones, fracturas, cirugias, transfuciones, gpo_rh, Vacunaciones, Enfermedades_actuales, menor_cantidad, ritmo, coagulos, dismenorrea, inicio_vida_sexual, dispaurencia, orgasmo, disminucion_libido, planificacion_familiar, tratamiento_hormonal, gesta, paras, aborto, legrado, cesarea, lactancia, papanicolao, mastografia, ultima_regla, leucorrea, menopausia, ipa_respiratorio, ipa_digestivo, ipa_urinario, ipa_endorcinos, ipa_sistema_nerviso, ipa_sistema_muscular, ipa_tegumentos, peso, talla, temperatura, presion, f_respiratoria, f_cardiaca, glucosa, oximetria, inspeccion_general, fecha_examenes, diagnostico, tratamiento, pronostico, consulta_subsiguiente) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        sql = "INSERT INTO historia_gine (fecha_registro, nombre_paciente, fecha_nacimiento, edad, tel, direcc, estado_civil, alergias, madre_vive, madre_sana, madre_enfermedades, padre_vive, padre_sano, padre_enfermedades, herm, abu, tios, hijos, originario, residente, escolaridad, ocupacion, deportes	, habitacion, mascotas, habitos_dieteticos, alcoholismo, tabaquismo, adicciones, padecimientos_infancia, infecciones, fracturas, cirugias, transfuciones, gpo_rh, Vacunaciones, Enfermedades_actuales, menor_cantidad, ritmo, coagulos, dismenorrea, inicio_vida_sexual, dispaurencia, orgasmo, disminucion_libido, planificacion_familiar, tratamiento_hormonal, gesta, paras, aborto, legrado, cesarea, lactancia, papanicolao, mastografia, ultima_regla, leucorrea, menopausia, ipa_respiratorio, ipa_digestivo, ipa_urinario, ipa_endorcinos, ipa_sistema_nerviso, ipa_sistema_muscular, ipa_tegumentos, peso, talla, temperatura, presion, f_respiratoria, f_cardiaca, glucosa, oximetria, fecha_examenes, diagnostico, tratamiento, pronostico, consulta_subsiguiente) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement pst = cn.prepareStatement(sql);
             pst.setString(1,((JTextField)jdfecha.getDateEditor().getUiComponent()).getText());
@@ -1455,12 +1452,11 @@ public class historia_ginecologica extends javax.swing.JFrame {
             pst.setString(71,fre_cardiaca);
             pst.setString(72,glucosa);
             pst.setString(73,oximetria);
-            pst.setString(74,inspeccion);
-            pst.setString(75,examenesprev);
-            pst.setString(76,diagnostico);
-            pst.setString(77,tratamiento);
-            pst.setString(78,pronostico);
-            pst.setString(79,consulta);
+            pst.setString(74,examenesprev);
+            pst.setString(75,diagnostico);
+            pst.setString(76,tratamiento);
+            pst.setString(77,pronostico);
+            pst.setString(78,consulta);
             int n = pst.executeUpdate();
             if(n>0){
                 JOptionPane.showMessageDialog(null,"Historial clínico guardado con éxito");
@@ -1547,7 +1543,6 @@ public class historia_ginecologica extends javax.swing.JFrame {
     private javax.swing.JLabel Tegumentos4;
     private javax.swing.JLabel Tegumentos5;
     private javax.swing.JLabel Tegumentos6;
-    private javax.swing.JLabel Tegumentos7;
     private javax.swing.JLabel Tegumentos8;
     private javax.swing.JLabel Tegumentos9;
     private javax.swing.JButton btnguardar;
@@ -1625,6 +1620,7 @@ public class historia_ginecologica extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
@@ -1633,7 +1629,6 @@ public class historia_ginecologica extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane14;
-    private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
     private javax.swing.JScrollPane jScrollPane18;
@@ -1686,7 +1681,6 @@ public class historia_ginecologica extends javax.swing.JFrame {
     private javax.swing.JTextField txtfcardiaca;
     private javax.swing.JTextField txtfracturas;
     private javax.swing.JTextField txtfrespiratoria;
-    private javax.swing.JTextArea txtgeneral;
     private javax.swing.JTextField txtgesta;
     private javax.swing.JTextField txtglucosa;
     private javax.swing.JTextField txtgpo;

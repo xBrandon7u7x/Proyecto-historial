@@ -82,24 +82,19 @@ public class historialpediatrico extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel56 = new javax.swing.JLabel();
         Tegumentos1 = new javax.swing.JLabel();
-        txtpeso = new javax.swing.JTextField();
-        Tegumentos2 = new javax.swing.JLabel();
-        txttalla = new javax.swing.JTextField();
+        txtabdominal = new javax.swing.JTextField();
         Tegumentos3 = new javax.swing.JLabel();
-        txtemperatura = new javax.swing.JTextField();
+        txtcefalica = new javax.swing.JTextField();
         Tegumentos4 = new javax.swing.JLabel();
-        txtpresion = new javax.swing.JTextField();
-        txtfrespiratoria = new javax.swing.JTextField();
+        txtbrazo = new javax.swing.JTextField();
+        txtpierna = new javax.swing.JTextField();
         Tegumentos5 = new javax.swing.JLabel();
         Tegumentos6 = new javax.swing.JLabel();
         txtfcardiaca = new javax.swing.JTextField();
         Tegumentos8 = new javax.swing.JLabel();
-        txtglucosa = new javax.swing.JTextField();
+        txtfrespiratoria = new javax.swing.JTextField();
         Tegumentos9 = new javax.swing.JLabel();
-        txtoximetria = new javax.swing.JTextField();
-        jScrollPane15 = new javax.swing.JScrollPane();
-        txtgeneral = new javax.swing.JTextArea();
-        Tegumentos10 = new javax.swing.JLabel();
+        txttemp = new javax.swing.JTextField();
         Tegumentos11 = new javax.swing.JLabel();
         jScrollPane16 = new javax.swing.JScrollPane();
         txtdiagnostico = new javax.swing.JTextArea();
@@ -140,8 +135,6 @@ public class historialpediatrico extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         heredofam = new javax.swing.JTextArea();
         Tegumentos14 = new javax.swing.JLabel();
-        jScrollPane20 = new javax.swing.JScrollPane();
-        txtdiagnostico1 = new javax.swing.JTextArea();
         jLabel22 = new javax.swing.JLabel();
         txtnoembarazo = new javax.swing.JTextField();
         jLabel39 = new javax.swing.JLabel();
@@ -211,9 +204,27 @@ public class historialpediatrico extends javax.swing.JFrame {
         txtdent = new javax.swing.JTextField();
         jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
-        anormalidades = new javax.swing.JTextField();
-        anormalidades1 = new javax.swing.JTextField();
+        txtanormalidades = new javax.swing.JTextField();
+        txtinfecciosos = new javax.swing.JTextField();
         jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
+        txttraumaticas = new javax.swing.JTextField();
+        jLabel80 = new javax.swing.JLabel();
+        txtquirurgicos = new javax.swing.JTextField();
+        jLabel82 = new javax.swing.JLabel();
+        txttransfusion = new javax.swing.JTextField();
+        jLabel83 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        txtotros = new javax.swing.JTextArea();
+        jScrollPane21 = new javax.swing.JScrollPane();
+        txtpadecimiento = new javax.swing.JTextArea();
+        jLabel81 = new javax.swing.JLabel();
+        Tegumentos7 = new javax.swing.JLabel();
+        txttoracico = new javax.swing.JTextField();
+        jScrollPane22 = new javax.swing.JScrollPane();
+        txtconsultasub = new javax.swing.JTextArea();
+        Tegumentos15 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 51, 255));
@@ -355,35 +366,25 @@ public class historialpediatrico extends javax.swing.JFrame {
         jLabel56.setText("Exploración fisíca");
 
         Tegumentos1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos1.setText("Peso:");
-
-        Tegumentos2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos2.setText("Talla:");
+        Tegumentos1.setText("P. Abdominal:");
 
         Tegumentos3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos3.setText("Temperatura:");
+        Tegumentos3.setText("P. Cefalica:");
 
         Tegumentos4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos4.setText("Presión:");
+        Tegumentos4.setText("P Brazo:");
 
         Tegumentos5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos5.setText("F. respiratoria:");
+        Tegumentos5.setText("P. Pierna:");
 
         Tegumentos6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos6.setText("F. cardiaca:");
+        Tegumentos6.setText("F. Cardiaca:");
 
         Tegumentos8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos8.setText("Glucosa:");
+        Tegumentos8.setText("F. Respiratoria:");
 
         Tegumentos9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos9.setText("Oximetria:");
-
-        txtgeneral.setColumns(20);
-        txtgeneral.setRows(5);
-        jScrollPane15.setViewportView(txtgeneral);
-
-        Tegumentos10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        Tegumentos10.setText("Examenes previos: ");
+        Tegumentos9.setText("Temperatura:");
 
         Tegumentos11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         Tegumentos11.setText("Diagnóstico");
@@ -508,10 +509,6 @@ public class historialpediatrico extends javax.swing.JFrame {
         Tegumentos14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         Tegumentos14.setText("Inspección general");
 
-        txtdiagnostico1.setColumns(20);
-        txtdiagnostico1.setRows(5);
-        jScrollPane20.setViewportView(txtdiagnostico1);
-
         jLabel22.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel22.setText("Antecedentes personales no patologicos");
 
@@ -627,7 +624,43 @@ public class historialpediatrico extends javax.swing.JFrame {
         jLabel77.setText("Anormalidades perinatales");
 
         jLabel78.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        jLabel78.setText("Anormalidades perinatales");
+        jLabel78.setText("Infecciosos:");
+
+        jLabel79.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel79.setText("Traumaticas:");
+
+        jLabel80.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel80.setText("Quirurgicos:");
+
+        jLabel82.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel82.setText("Transfusión:");
+
+        jLabel83.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel83.setText("Otros:");
+
+        txtotros.setColumns(20);
+        txtotros.setRows(5);
+        jScrollPane5.setViewportView(txtotros);
+
+        txtpadecimiento.setColumns(20);
+        txtpadecimiento.setRows(5);
+        jScrollPane21.setViewportView(txtpadecimiento);
+
+        jLabel81.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel81.setText("Padecimiento actual");
+
+        Tegumentos7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos7.setText("P. Toracico:");
+
+        txtconsultasub.setColumns(20);
+        txtconsultasub.setRows(5);
+        jScrollPane22.setViewportView(txtconsultasub);
+
+        Tegumentos15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        Tegumentos15.setText("Consulta subsiguiente");
+
+        jLabel84.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel84.setText("Inspeccion general");
 
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
@@ -926,72 +959,15 @@ public class historialpediatrico extends javax.swing.JFrame {
                         .addComponent(txtinmuni, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(panelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Tegumentos11)
-                            .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
+                                .addComponent(jLabel77)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtanormalidades, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(panelLayout.createSequentialGroup()
-                                .addComponent(Tegumentos4)
+                                .addComponent(jLabel80)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtpresion, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(Tegumentos5)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtfrespiratoria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(Tegumentos6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtfcardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(panelLayout.createSequentialGroup()
-                                .addComponent(Tegumentos8)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtglucosa, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(Tegumentos9)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Tegumentos10)
-                            .addComponent(Tegumentos14)
-                            .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Tegumentos13)
-                            .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Tegumentos12)
-                            .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(panelLayout.createSequentialGroup()
-                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(panelLayout.createSequentialGroup()
-                                        .addComponent(jLabel77)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(anormalidades, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelLayout.createSequentialGroup()
-                                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel56)
-                                            .addGroup(panelLayout.createSequentialGroup()
-                                                .addComponent(Tegumentos1)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(txtpeso, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(Tegumentos2)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(txttalla, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(Tegumentos3)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel68)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtgposan, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel73)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtprimpal, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addGap(270, 270, 270)
-                        .addComponent(btnguardar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1))
+                                .addComponent(txtquirurgicos, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(panelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel74)
@@ -1006,9 +982,100 @@ public class historialpediatrico extends javax.swing.JFrame {
                                 .addComponent(txtdent, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(panelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel78)
+                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelLayout.createSequentialGroup()
+                                .addComponent(jLabel79)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txttraumaticas))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panelLayout.createSequentialGroup()
+                                .addComponent(jLabel78)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtinfecciosos, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel82)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(anormalidades1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txttransfusion, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel83))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addComponent(Tegumentos4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtbrazo, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tegumentos5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtpierna, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tegumentos6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtfcardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Tegumentos14)
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addComponent(Tegumentos8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtfrespiratoria, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(Tegumentos9)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txttemp, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addComponent(jLabel68)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtgposan, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel73)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtprimpal, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addGap(87, 87, 87)
+                        .addComponent(jLabel81))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addGap(93, 93, 93)
+                        .addComponent(jLabel56))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(Tegumentos3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtcefalica, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Tegumentos7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txttoracico, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Tegumentos1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtabdominal, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addGap(92, 92, 92)
+                        .addComponent(jLabel84))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Tegumentos11)
+                            .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos13)
+                            .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos12)
+                            .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Tegumentos15)
+                            .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 532, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addGap(328, 328, 328)
+                        .addComponent(btnguardar)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1)))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
         panelLayout.setVerticalGroup(
@@ -1240,44 +1307,60 @@ public class historialpediatrico extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel77)
-                    .addComponent(anormalidades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtanormalidades, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel78)
-                    .addComponent(anormalidades1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(379, 379, 379)
+                    .addComponent(txtinfecciosos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel79)
+                    .addComponent(txttraumaticas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel80)
+                    .addComponent(txtquirurgicos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel82)
+                    .addComponent(txttransfusion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel83)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(35, 35, 35)
+                .addComponent(jLabel81)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
                 .addComponent(jLabel56)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Tegumentos1)
-                    .addComponent(txtpeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Tegumentos2)
-                    .addComponent(txttalla, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Tegumentos3)
-                    .addComponent(txtemperatura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(txtcefalica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Tegumentos7)
+                    .addComponent(txttoracico, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Tegumentos1)
+                    .addComponent(txtabdominal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Tegumentos4)
-                    .addComponent(txtpresion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtbrazo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Tegumentos5)
-                    .addComponent(txtfrespiratoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtpierna, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Tegumentos6)
                     .addComponent(txtfcardiaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Tegumentos8)
-                    .addComponent(txtglucosa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtfrespiratoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Tegumentos9)
-                    .addComponent(txtoximetria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txttemp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(Tegumentos14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(jLabel84)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Tegumentos10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Tegumentos11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1289,11 +1372,15 @@ public class historialpediatrico extends javax.swing.JFrame {
                 .addComponent(Tegumentos13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Tegumentos15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(btnguardar))
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         jScrollPane1.setViewportView(panel);
@@ -1313,7 +1400,7 @@ public class historialpediatrico extends javax.swing.JFrame {
         conectar cc = new conectar();
         Connection cn = cc.conexion();
 
-        String nom,edad,direccion,tel,sex,informante,alergia,mavive,masana,enferma,maesco,maocu,gesta,abortos,matoxic,pavive,pasano,enfermo,paesco,paocu,patoxic,nohermanos,hermanvivos,hermanmuertos,hermanedad,hermansan,hermanenfer,antecedentesheredo,numemba,normal,edadges,partodis,membrana,anestesia,bloqueo,neodental,cianosis,hemorragias,convulciones,ictericia,peso,talla,materna,ablactacion,destete,vecindad,departamento,casasola,agua,mascotas,siguiobj,sosten,sentado,camino,inmunizaciones,sanguineo,primeraspalabras,control,denticion;
+        String nom,edad,direccion,tel,sex,informante,alergia,mavive,masana,enferma,maesco,maocu,gesta,abortos,matoxic,pavive,pasano,enfermo,paesco,paocu,patoxic,nohermanos,hermanvivos,hermanmuertos,hermanedad,hermansan,hermanenfer,antecedentesheredo,numemba,normal,edadges,partodis,membrana,anestesia,bloqueo,neodental,cianosis,hemorragias,convulciones,ictericia,pesopat,tallapat,materna,ablactacion,destete,vecindad,departamento,casasola,agua,mascotas,siguiobj,sosten,sentado,camino,inmunizaciones,sanguineo,primeraspalabras,control,denticion,anormalidades,infecciosos,traumaticas,quirurgicos,transfusion,otros,padecimiento,cefalica,toracico,abdominal,brazo,pierna,cardiaca,respiratoria,temperatura,diagnostico,tratamiento,pronostico,consultasub;
         String sql=" ";
 
         nom = txt_nombre.getText();
@@ -1356,8 +1443,8 @@ public class historialpediatrico extends javax.swing.JFrame {
         hemorragias = txthemorragias.getText();
         convulciones = txtconvulsiones.getText();
         ictericia = txticter.getText();
-        peso = txtpesopat.getText();
-        talla = txttallapat.getText();
+        pesopat = txtpesopat.getText();
+        tallapat = txttallapat.getText();
         materna = txtmaterna.getText();
         ablactacion = txtablac.getText();
         destete = txtdestete.getText();
@@ -1375,19 +1462,26 @@ public class historialpediatrico extends javax.swing.JFrame {
         primeraspalabras = txtprimpal.getText();
         control = txtcontrolan.getText();
         denticion = txtdent.getText();
-//        peso = txtpeso.getText();
-//        talla = txttalla.getText();
-//        temperatura = txtemperatura.getText();
-//        presion = txtpresion.getText();
-//        fre_respiratoria = txtfrespiratoria.getText();
-//        fre_cardiaca = txtfcardiaca.getText();
-//        glucosa = txtglucosa.getText();
-//        oximetria = txtoximetria.getText();
-//        inspeccion = txtgeneral.getText();
-//        diagnostico = txtdiagnostico.getText();
-//        tratamiento = txttratamiento.getText();
-//        pronostico = txtpronostico.getText();
-        sql = "INSERT INTO historia_clinica_pediatrica (fecha_registro, nombre_paciente, fecha_naci, edad, sexo, telefono, direccion, informante, alergia, madre_vive, madre_sana, madre_enfermedades, escolaridad_madre, ocupacion_madre, gesta, abortos, toxicomaniacos_madre, padre_vive, padre_sano, padre_enfermedades, escolaridad_padre, ocupacion_padre, toxicomaniacos_padre, numero_hermanos, hermanos_vivos, hermanos_muertos, edad_hermanos, hermanos_sanos, hermanos_enfermos, antecendentes_heredofam, num_embarazo, normal, edad_gestinal, parto_distocico, ruptura_membrana, anestesia_general, bloqueo, apnea_neodental, cianosis, hemoragias, convulciones, ictericia, peso, talla, materna, ablactacion, destete, vecindad, departamento, casa_sola, agua_intra, mascotas, siguio_objetos, sosten_cefalico, se_mantuvo_sentado, camino, inmunizaciones, gpo_sanguineo, primeras_palabras, control_anal, denticion) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+        anormalidades = txtanormalidades.getText();
+        infecciosos = txtinfecciosos.getText();
+        traumaticas = txttraumaticas.getText();
+        quirurgicos = txtquirurgicos.getText();
+        transfusion = txttransfusion.getText();
+        otros = txtotros.getText();
+        padecimiento = txtpadecimiento.getText();
+        cefalica = txtcefalica.getText();
+        toracico = txttoracico.getText();
+        abdominal = txtabdominal.getText();
+        brazo = txtbrazo.getText();
+        pierna = txtpierna.getText();
+        cardiaca = txtfcardiaca.getText();
+        respiratoria = txtfrespiratoria.getText();
+        temperatura = txttemp.getText();
+        diagnostico = txtdiagnostico.getText();
+        tratamiento = txttratamiento.getText();
+        pronostico = txtpronostico.getText();
+        consultasub = txtconsultasub.getText();
+        sql = "INSERT INTO historia_clinica_pediatrica (fecha_registro, nombre_paciente, fecha_naci, edad, sexo, telefono, direccion, informante, alergia, madre_vive, madre_sana, madre_enfermedades, escolaridad_madre, ocupacion_madre, gesta, abortos, toxicomaniacos_madre, padre_vive, padre_sano, padre_enfermedades, escolaridad_padre, ocupacion_padre, toxicomaniacos_padre, numero_hermanos, hermanos_vivos, hermanos_muertos, edad_hermanos, hermanos_sanos, hermanos_enfermos, antecendentes_heredofam, num_embarazo, normal, edad_gestinal, parto_distocico, ruptura_membrana, anestesia_general, bloqueo, apnea_neodental, cianosis, hemoragias, convulciones, ictericia, peso, talla, materna, ablactacion, destete, vecindad, departamento, casa_sola, agua_intra, mascotas, siguio_objetos, sosten_cefalico, se_mantuvo_sentado, camino, inmunizaciones, gpo_sanguineo, primeras_palabras, control_anal, denticion, anormalidades_perianales, infecciosos, traumaticas, quirurgicos, transfusion, otros, padecimiento_actual, p_cefalica, p_toracico, p_abdominal, p_brazo, p_pierna, f_cardiaca, f_respiratoria, temperatura, diagnostico, tratamiento, pronostico, consulta_subsiguiente) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         try {
             PreparedStatement pst = cn.prepareStatement(sql);
             pst.setString(1,((JTextField)jdfecha.getDateEditor().getUiComponent()).getText());
@@ -1432,8 +1526,8 @@ public class historialpediatrico extends javax.swing.JFrame {
             pst.setString(40,hemorragias);
             pst.setString(41,convulciones);
             pst.setString(42,ictericia);
-            pst.setString(43,peso);
-            pst.setString(44,talla);
+            pst.setString(43,pesopat);
+            pst.setString(44,tallapat);
             pst.setString(45,materna);
             pst.setString(46,ablactacion);
             pst.setString(47,destete);
@@ -1451,6 +1545,25 @@ public class historialpediatrico extends javax.swing.JFrame {
             pst.setString(59,primeraspalabras);
             pst.setString(60,control);
             pst.setString(61,denticion);
+            pst.setString(62,anormalidades);
+            pst.setString(63,infecciosos);
+            pst.setString(64,traumaticas);
+            pst.setString(65,quirurgicos);
+            pst.setString(66,transfusion);
+            pst.setString(67,otros);
+            pst.setString(68,padecimiento);
+            pst.setString(69,cefalica);
+            pst.setString(70,toracico);
+            pst.setString(71,abdominal);
+            pst.setString(72,brazo);
+            pst.setString(73,pierna);
+            pst.setString(74,cardiaca);
+            pst.setString(75,respiratoria);
+            pst.setString(76,temperatura);
+            pst.setString(77,diagnostico);
+            pst.setString(78,tratamiento);
+            pst.setString(79,pronostico);
+            pst.setString(80,consultasub);
             int n = pst.executeUpdate();
             if(n>0){
                 JOptionPane.showMessageDialog(null,"Historial clínico guardado con éxito");
@@ -1558,20 +1671,18 @@ public class historialpediatrico extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Tegumentos1;
-    private javax.swing.JLabel Tegumentos10;
     private javax.swing.JLabel Tegumentos11;
     private javax.swing.JLabel Tegumentos12;
     private javax.swing.JLabel Tegumentos13;
     private javax.swing.JLabel Tegumentos14;
-    private javax.swing.JLabel Tegumentos2;
+    private javax.swing.JLabel Tegumentos15;
     private javax.swing.JLabel Tegumentos3;
     private javax.swing.JLabel Tegumentos4;
     private javax.swing.JLabel Tegumentos5;
     private javax.swing.JLabel Tegumentos6;
+    private javax.swing.JLabel Tegumentos7;
     private javax.swing.JLabel Tegumentos8;
     private javax.swing.JLabel Tegumentos9;
-    private javax.swing.JTextField anormalidades;
-    private javax.swing.JTextField anormalidades1;
     private javax.swing.JButton btnguardar;
     private javax.swing.JTextField edadhermanos;
     private javax.swing.JTextArea heredofam;
@@ -1653,18 +1764,25 @@ public class historialpediatrico extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane16;
     private javax.swing.JScrollPane jScrollPane17;
     private javax.swing.JScrollPane jScrollPane18;
     private javax.swing.JScrollPane jScrollPane19;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane20;
+    private javax.swing.JScrollPane jScrollPane21;
+    private javax.swing.JScrollPane jScrollPane22;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private com.toedter.calendar.JDateChooser jdfecha;
     private com.toedter.calendar.JDateChooser jdfechanacim;
     private javax.swing.JTextField numherman;
@@ -1676,36 +1794,38 @@ public class historialpediatrico extends javax.swing.JFrame {
     private javax.swing.JTextField txt_sana;
     private javax.swing.JTextField txt_sexo;
     private javax.swing.JTextField txt_tel;
+    private javax.swing.JTextField txtabdominal;
     private javax.swing.JTextField txtablac;
     private javax.swing.JTextField txtabortos;
     private javax.swing.JTextField txtagua;
     private javax.swing.JTextArea txtalergias;
     private javax.swing.JTextField txtanestesia;
+    private javax.swing.JTextField txtanormalidades;
     private javax.swing.JTextField txtapnea;
     private javax.swing.JTextField txtbloqueo;
+    private javax.swing.JTextField txtbrazo;
     private javax.swing.JTextField txtcamino;
     private javax.swing.JTextField txtcasasola;
+    private javax.swing.JTextField txtcefalica;
     private javax.swing.JTextField txtcianosis;
+    private javax.swing.JTextArea txtconsultasub;
     private javax.swing.JTextField txtcontrolan;
     private javax.swing.JTextField txtconvulsiones;
     private javax.swing.JTextField txtdent;
     private javax.swing.JTextField txtdepartamento;
     private javax.swing.JTextField txtdestete;
     private javax.swing.JTextArea txtdiagnostico;
-    private javax.swing.JTextArea txtdiagnostico1;
     private javax.swing.JTextField txtedadgest;
-    private javax.swing.JTextField txtemperatura;
     private javax.swing.JTextArea txtenferma;
     private javax.swing.JTextArea txtenfermo;
     private javax.swing.JTextField txtescolaridad;
     private javax.swing.JTextField txtfcardiaca;
     private javax.swing.JTextField txtfrespiratoria;
-    private javax.swing.JTextArea txtgeneral;
     private javax.swing.JTextField txtgesta;
-    private javax.swing.JTextField txtglucosa;
     private javax.swing.JTextField txtgposan;
     private javax.swing.JTextField txthemorragias;
     private javax.swing.JTextField txticter;
+    private javax.swing.JTextField txtinfecciosos;
     private javax.swing.JTextField txtinformante;
     private javax.swing.JTextField txtinmuni;
     private javax.swing.JTextField txtmascotas;
@@ -1714,25 +1834,29 @@ public class historialpediatrico extends javax.swing.JFrame {
     private javax.swing.JTextField txtnormal;
     private javax.swing.JTextField txtobjetos;
     private javax.swing.JTextField txtocupacion;
-    private javax.swing.JTextField txtoximetria;
+    private javax.swing.JTextArea txtotros;
+    private javax.swing.JTextArea txtpadecimiento;
     private javax.swing.JTextField txtpaescolaridad;
     private javax.swing.JTextField txtpaocupacion;
     private javax.swing.JTextField txtparto;
     private javax.swing.JTextField txtpatoxic;
     private javax.swing.JTextField txtpavive;
-    private javax.swing.JTextField txtpeso;
     private javax.swing.JTextField txtpesopat;
-    private javax.swing.JTextField txtpresion;
+    private javax.swing.JTextField txtpierna;
     private javax.swing.JTextField txtprimpal;
     private javax.swing.JTextArea txtpronostico;
+    private javax.swing.JTextField txtquirurgicos;
     private javax.swing.JTextField txtruptura;
     private javax.swing.JTextField txtsano;
     private javax.swing.JTextField txtsentado;
     private javax.swing.JTextField txtsosten;
-    private javax.swing.JTextField txttalla;
     private javax.swing.JTextField txttallapat;
+    private javax.swing.JTextField txttemp;
+    private javax.swing.JTextField txttoracico;
     private javax.swing.JTextField txttoxic;
+    private javax.swing.JTextField txttransfusion;
     private javax.swing.JTextArea txttratamiento;
+    private javax.swing.JTextField txttraumaticas;
     private javax.swing.JTextField txtvecindad;
     // End of variables declaration//GEN-END:variables
 }

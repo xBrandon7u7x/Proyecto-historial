@@ -108,7 +108,9 @@ public class menubuscar extends javax.swing.JFrame {
     }//GEN-LAST:event_btnbuscarhistoriaclinicaActionPerformed
 
     private void btnbuscarhistoriapediatricaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarhistoriapediatricaActionPerformed
-    
+    buscarhistoriaclinicapediatrica abrir = new buscarhistoriaclinicapediatrica();
+    abrir.setVisible(true);
+    this.setVisible(false);
     }//GEN-LAST:event_btnbuscarhistoriapediatricaActionPerformed
 
     private void btnbuscarhistoriaclinicaginecologicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarhistoriaclinicaginecologicaActionPerformed

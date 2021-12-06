@@ -19,118 +19,118 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author xBrandon7u7x
  */
-public class buscarhistoriaginecologica extends javax.swing.JFrame {
+public class buscarhistoriaclinicapediatrica extends javax.swing.JFrame {
 DefaultTableModel model;
     /**
      * Creates new form buscarhistorialclinico
      */
-    public buscarhistoriaginecologica() {
+    public buscarhistoriaclinicapediatrica() {
         initComponents();
         buscar("");
     }
     void buscar(String valor){
-        String [] titulos={"Num. de historia", "fecha_registro", "nombre_paciente", "fecha_nacimiento", "edad", "tel", "direcc", "estado_civil", "alergias", "madre_vive", "madre_sana", "madre_enfermedades", "padre_vive", "padre_sano", "padre_enfermedades", "herm", "abu", "tios", "hijos", "originario", "residente", "escolaridad", "ocupacion", "deportes", "habitacion", "mascotas", "habitos_dieteticos", "alcoholismo", "tabaquismo", "adicciones", "padecimientos_infancia", "infecciones", "fracturas", "cirugias", "transfuciones", "gpo_rh", "Vacunaciones", "Enfermedades_actuales", "menor_cantidad", "ritmo", "coagulos", "dismenorrea", "inicio_vida_sexual", "dispaurencia", "orgasmo", "disminucion_libido", "planificacion_familiar", "tratamiento_hormonal", "gesta", "paras", "aborto", "legrado", "cesarea", "lactancia", "papanicolao", "mastografia", "ultima_regla", "leucorrea", "menopausia", "ipa_respiratorio", "ipa_digestivo", "ipa_urinario", "ipa_endorcinos", "ipa_sistema_nerviso", "ipa_sistema_muscular", "ipa_tegumentos", "peso", "talla", "temperatura", "presion", "f_respiratoria", "f_cardiaca", "glucosa", "oximetria", "inspeccion_general", "fecha de examenes previos", "diagnostico", "tratamiento", "pronostico", "consulta_subsiguiente"};
-        String [] registros = new String [80];
+        String [] titulos={"Num. de historia","Fecha de registro","Nombre del paciente","Fecha nacimiento","Edad","Sexo","Telefono","Direccion","Informante","Alergia","Madre vive","Madre sana","Enfermedades de la madre","Escolaridad de la madre","Ocupacion de madre","Gesta","Abortos","Toxicomaniacos madre","Padre vive","Padre sano","Enfermedades del padre", "Escolaridad del padre","Ocupacion del padre","Toxicomaniacos padre","Numero hermanos","Hermanos vivos","Hermanos muertos","Edad hermanos","Hermanos sanos","Hermanos enfermos", "Antecendentes heredofam","Num. embarazo","Normal","Edad gestinal","Parto distocico","Ruptura de membrana","Anestesia general","Bloqueo","Apnea neodental","Cianosis", "Hemoragias","Convulciones","Ictericia","Peso","Talla","Materna","Ablactacion","Destete","Vecindad","Departamento","Casa sola","Agua intra","Mascotas","Siguio objetos","Sosten cefalico","Se mantuvo sentado","Camino","Inmunizaciones","Gpo sanguineo","Primeras palabras","Control anal","Denticion","Anormalidades perianales", "Infecciosos","Traumaticas","Quirurgicos","Transfusion","Otros","Padecimiento actual","P. Cefalica","P. Toracico","P. Abdominal", "P. Brazo","P. Pierna","F. Cardiaca","F. Respiratoria","Temperatura","Diagnostico","Tratamiento","Pronostico","Consulta subsiguiente"};
+        String [] registros = new String [81];
         model = new DefaultTableModel(null,titulos);
         conectar cc = new conectar();
         Connection cn = cc.conexion();
         String sql="";
         if(valor.equals("")){
-            sql="SELECT * FROM historia_gine";
+            sql="SELECT * FROM historia_clinica_pediatrica";
         }else{
-            sql="SELECT * FROM historia_gine WHERE nombre_paciente LIKE '%"+valor+"%'";
+            sql="SELECT * FROM historia_clinica_pediatrica WHERE nombre_paciente LIKE '%"+valor+"%'";
         }
     try {
         Statement st = cn.createStatement();
         ResultSet rs = st.executeQuery(sql);
         
         while(rs.next()){
-            
-registros[0]=rs.getString("id_historia_gine");
-registros[1]=rs.getString("fecha_registro");
-registros[2]=rs.getString("nombre_paciente");
-registros[3]=rs.getString("fecha_nacimiento");
-registros[4]=rs.getString("edad");
-registros[5]=rs.getString("tel");
-registros[6]=rs.getString("direcc");
-registros[7]=rs.getString("estado_civil");
-registros[8]=rs.getString("alergias");
-registros[9]=rs.getString("madre_vive");
-registros[10]=rs.getString("madre_sana");
-registros[11]=rs.getString("madre_enfermedades");
-registros[12]=rs.getString("padre_vive");
-registros[13]=rs.getString("padre_sano");
-registros[14]=rs.getString("padre_enfermedades");
-registros[15]=rs.getString("herm");
-registros[16]=rs.getString("abu");
-registros[17]=rs.getString("tios");
-registros[18]=rs.getString("hijos");
-registros[19]=rs.getString("originario");
-registros[20]=rs.getString("residente");
-registros[21]=rs.getString("escolaridad");
-registros[22]=rs.getString("ocupacion");
-registros[23]=rs.getString("deportes");
-registros[24]=rs.getString("habitacion");
-registros[25]=rs.getString("mascotas");
-registros[26]=rs.getString("habitos_dieteticos");
-registros[27]=rs.getString("alcoholismo");
-registros[28]=rs.getString("tabaquismo");
-registros[29]=rs.getString("adicciones");
-registros[30]=rs.getString("padecimientos_infancia");
-registros[31]=rs.getString("infecciones");
-registros[32]=rs.getString("fracturas");
-registros[33]=rs.getString("cirugias");
-registros[34]=rs.getString("transfuciones");
-registros[35]=rs.getString("gpo_rh");
-registros[36]=rs.getString("Vacunaciones");
-registros[37]=rs.getString("Enfermedades_actuales");
-registros[38]=rs.getString("menor_cantidad");
-registros[39]=rs.getString("ritmo");
-registros[40]=rs.getString("coagulos");
-registros[41]=rs.getString("dismenorrea");
-registros[42]=rs.getString("inicio_vida_sexual");
-registros[43]=rs.getString("dispaurencia");
-registros[44]=rs.getString("orgasmo");
-registros[45]=rs.getString("disminucion_libido");
-registros[46]=rs.getString("planificacion_familiar");
-registros[47]=rs.getString("tratamiento_hormonal");
-registros[48]=rs.getString("gesta");
-registros[49]=rs.getString("paras");
-registros[50]=rs.getString("aborto");
-registros[51]=rs.getString("legrado");
-registros[52]=rs.getString("cesarea");
-registros[53]=rs.getString("lactancia");
-registros[54]=rs.getString("papanicolao");
-registros[55]=rs.getString("mastografia");
-registros[56]=rs.getString("ultima_regla");
-registros[57]=rs.getString("leucorrea");
-registros[58]=rs.getString("menopausia");
-registros[59]=rs.getString("ipa_respiratorio");
-registros[60]=rs.getString("ipa_digestivo");
-registros[61]=rs.getString("ipa_urinario");
-registros[62]=rs.getString("ipa_endorcinos");
-registros[63]=rs.getString("ipa_sistema_nerviso");
-registros[64]=rs.getString("ipa_sistema_muscular");
-registros[65]=rs.getString("ipa_tegumentos");
-registros[66]=rs.getString("peso");
-registros[67]=rs.getString("talla");
-registros[68]=rs.getString("temperatura");
-registros[69]=rs.getString("presion");
-registros[70]=rs.getString("f_respiratoria");
-registros[71]=rs.getString("f_cardiaca");
-registros[72]=rs.getString("glucosa");
-registros[73]=rs.getString("oximetria");
-registros[74]=rs.getString("inspeccion_general");
-registros[75]=rs.getString("fecha_examenes");
-registros[76]=rs.getString("diagnostico");
-registros[77]=rs.getString("tratamiento");
-registros[78]=rs.getString("pronostico");
-registros[79]=rs.getString("consulta_subsiguiente");
+            registros[0]=rs.getString("id_historiapediatrica");
+            registros[1]=rs.getString("fecha_registro"); 
+            registros[2]=rs.getString("nombre_paciente");
+            registros[3]=rs.getString("fecha_naci");
+            registros[4]=rs.getString("edad"); 
+            registros[5]=rs.getString("sexo");
+            registros[6]=rs.getString("telefono");
+            registros[7]=rs.getString("direccion");
+            registros[8]=rs.getString("informante");
+            registros[9]=rs.getString("alergia");
+            registros[10]=rs.getString("madre_vive");
+            registros[11]=rs.getString("madre_sana");
+            registros[12]=rs.getString("madre_enfermedades");
+            registros[13]=rs.getString("escolaridad_madre");
+            registros[14]=rs.getString("ocupacion_madre");
+            registros[15]=rs.getString("gesta");
+            registros[16]=rs.getString("abortos");
+            registros[17]=rs.getString("toxicomaniacos_madre");
+            registros[18]=rs.getString("padre_vive");
+            registros[19]=rs.getString("padre_sano");
+            registros[20]=rs.getString("padre_enfermedades");
+            registros[21]=rs.getString("escolaridad_padre");
+            registros[22]=rs.getString("ocupacion_padre");
+            registros[23]=rs.getString("toxicomaniacos_padre");
+            registros[24]=rs.getString("numero_hermanos");
+            registros[25]=rs.getString("hermanos_vivos");
+            registros[26]=rs.getString("hermanos_muertos");
+            registros[27]=rs.getString("edad_hermanos");
+            registros[28]=rs.getString("hermanos_sanos");
+            registros[29]=rs.getString("hermanos_enfermos");
+            registros[30]=rs.getString("antecendentes_heredofam");
+            registros[31]=rs.getString("num_embarazo");
+            registros[32]=rs.getString("normal");
+            registros[33]=rs.getString("edad_gestinal");
+            registros[34]=rs.getString("parto_distocico");
+            registros[35]=rs.getString("ruptura_membrana");
+            registros[36]=rs.getString("anestesia_general");
+            registros[37]=rs.getString("bloqueo");
+            registros[38]=rs.getString("apnea_neodental");
+            registros[39]=rs.getString("cianosis");
+            registros[40]=rs.getString("hemoragias");
+            registros[41]=rs.getString("convulciones");
+            registros[42]=rs.getString("ictericia");
+            registros[43]=rs.getString("peso");
+            registros[44]=rs.getString("talla");
+            registros[45]=rs.getString("materna");
+            registros[46]=rs.getString("ablactacion");
+            registros[47]=rs.getString("destete");
+            registros[48]=rs.getString("vecindad");
+            registros[49]=rs.getString("departamento");
+            registros[50]=rs.getString("casa_sola");
+            registros[51]=rs.getString("agua_intra");
+            registros[52]=rs.getString("mascotas");
+            registros[53]=rs.getString("siguio_objetos");
+            registros[54]=rs.getString("sosten_cefalico");
+            registros[55]=rs.getString("se_mantuvo_sentado");
+            registros[56]=rs.getString("camino");
+            registros[57]=rs.getString("inmunizaciones");
+            registros[58]=rs.getString("gpo_sanguineo");
+            registros[59]=rs.getString("primeras_palabras");
+            registros[60]=rs.getString("control_anal");
+            registros[61]=rs.getString("denticion");
+            registros[62]=rs.getString("anormalidades_perianales");
+            registros[63]=rs.getString("infecciosos");
+            registros[64]=rs.getString("traumaticas");
+            registros[65]=rs.getString("quirurgicos");
+            registros[66]=rs.getString("transfusion");
+            registros[67]=rs.getString("otros");
+            registros[68]=rs.getString("padecimiento_actual");
+            registros[69]=rs.getString("p_cefalica");
+            registros[70]=rs.getString("p_toracico");
+            registros[71]=rs.getString("p_abdominal");
+            registros[72]=rs.getString("p_brazo");
+            registros[73]=rs.getString("p_pierna");
+            registros[74]=rs.getString("f_cardiaca");
+            registros[75]=rs.getString("f_respiratoria");
+            registros[76]=rs.getString("temperatura");
+            registros[77]=rs.getString("diagnostico");
+            registros[78]=rs.getString("tratamiento");
+            registros[79]=rs.getString("pronostico");
+            registros[80]=rs.getString("consulta_subsiguiente");
             model.addRow(registros);            
         }
         tpacientes.setModel(model);
     } catch (SQLException ex) {
-        JOptionPane.showMessageDialog(null,"No se eoncotro");
+        JOptionPane.showMessageDialog(null,ex);
     }
         
     }
@@ -158,8 +158,9 @@ registros[79]=rs.getString("consulta_subsiguiente");
         jScrollPane7 = new javax.swing.JScrollPane();
         txtconsultasub = new javax.swing.JTextArea();
         btnactualizar = new javax.swing.JButton();
+        jLabel10 = new javax.swing.JLabel();
 
-        jMenuItem1.setText("Actualizar historia");
+        jMenuItem1.setText("Actualizar Historia Clinica");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -228,6 +229,9 @@ registros[79]=rs.getString("consulta_subsiguiente");
             }
         });
 
+        jLabel10.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel10.setText("Buscar Historia Pediatrica");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -237,28 +241,33 @@ registros[79]=rs.getString("consulta_subsiguiente");
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 4523, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel14)
+                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 837, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtbuscarnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnbuscar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnmostrar)
-                                .addGap(66, 66, 66)
-                                .addComponent(btnregresar))
-                            .addComponent(jLabel14)
-                            .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 7000, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel10)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(txtbuscarnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnbuscar)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnmostrar)
+                                        .addGap(66, 66, 66)
+                                        .addComponent(btnregresar))))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(362, 362, 362)
+                        .addGap(331, 331, 331)
                         .addComponent(btnactualizar)))
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(26, 26, 26)
+                .addComponent(jLabel10)
+                .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtbuscarnombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel9)
@@ -267,13 +276,13 @@ registros[79]=rs.getString("consulta_subsiguiente");
                     .addComponent(btnmostrar))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
+                .addGap(37, 37, 37)
                 .addComponent(jLabel14)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
                 .addComponent(btnactualizar)
-                .addContainerGap(445, Short.MAX_VALUE))
+                .addContainerGap(462, Short.MAX_VALUE))
         );
 
         jScrollPane2.setViewportView(jPanel1);
@@ -283,12 +292,12 @@ registros[79]=rs.getString("consulta_subsiguiente");
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1144, Short.MAX_VALUE)
-                .addGap(0, 0, 0))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1987, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 655, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 686, Short.MAX_VALUE)
         );
 
         pack();
@@ -315,7 +324,7 @@ registros[79]=rs.getString("consulta_subsiguiente");
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
     int registros=tpacientes.getSelectedRow();
     if(registros>=0){
-        txtconsultasub.setText(tpacientes.getValueAt(registros, 79).toString());
+        txtconsultasub.setText(tpacientes.getValueAt(registros, 80).toString());
     }else{
         JOptionPane.showMessageDialog(null,"No selecciono un paciente");
     }
@@ -325,12 +334,12 @@ registros[79]=rs.getString("consulta_subsiguiente");
     conectar cc = new conectar();
     Connection cn = cc.conexion();
     try {
-        PreparedStatement pst = cn.prepareStatement("Update historia_gine SET consulta_subsiguiente='"+txtconsultasub.getText()+"' WHERE nombre_paciente='"+txtbuscarnombre.getText()+"'");
+        PreparedStatement pst = cn.prepareStatement("Update historia_clinica_pediatrica SET consulta_subsiguiente='"+txtconsultasub.getText()+"' WHERE nombre_paciente='"+txtbuscarnombre.getText()+"'");
         pst.executeUpdate();
         JOptionPane.showMessageDialog(null,"Historia actualizada");
         buscar("");
     } catch (SQLException ex) {
-        Logger.getLogger(buscarhistoriaginecologica.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(buscarhistoriaclinicapediatrica.class.getName()).log(Level.SEVERE, null, ex);
         JOptionPane.showMessageDialog(null,"Error al actualizar");
     }
     }//GEN-LAST:event_btnactualizarActionPerformed
@@ -352,14 +361,38 @@ registros[79]=rs.getString("consulta_subsiguiente");
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(buscarhistoriaginecologica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buscarhistoriaclinicapediatrica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(buscarhistoriaginecologica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buscarhistoriaclinicapediatrica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(buscarhistoriaginecologica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buscarhistoriaclinicapediatrica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(buscarhistoriaginecologica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(buscarhistoriaclinicapediatrica.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -372,7 +405,7 @@ registros[79]=rs.getString("consulta_subsiguiente");
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new buscarhistoriaginecologica().setVisible(true);
+                new buscarhistoriaclinicapediatrica().setVisible(true);
             }
         });
     }
@@ -382,6 +415,7 @@ registros[79]=rs.getString("consulta_subsiguiente");
     private javax.swing.JButton btnbuscar;
     private javax.swing.JButton btnmostrar;
     private javax.swing.JButton btnregresar;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JMenuItem jMenuItem1;
